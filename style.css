@@ -20,6 +20,12 @@ main{
     color: var(--light-white);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+#sidebar > *{
+    border: solid 1px red;
 }
 
 #sidebar > ul > *{
@@ -30,7 +36,33 @@ main{
 #header{
     border: solid 1px green;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+#header > .search-container{
+    grid-column: 1 / 2;
+}
+
+#header > .tr-container{
+    grid-column: 2 / 4;
+}
+
+#header > .intro-container{
+    grid-column: 1 / 2;
+
+}
+
+#header > .button-container{
+    grid-column: 2 / 4;
+}
+
+#header > * {
+    border: solid 1px red;
+}
+
+
 
 #content{
     border: solid 1px darkcyan;
