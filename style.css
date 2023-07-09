@@ -45,16 +45,27 @@ main{
     grid-column: 1 / 2;
 }
 
+
+
+
 .icons-container{
     grid-column: 2 / 4;
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.icons-container > h3{
-    display: inline;
+.icons-container > img{
+    width: max(40px, 10%);
+}
+.icons-container > * {
+    border: solid 1px orange;
 }
 
- .intro-container{
+
+
+
+.intro-container{
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -72,6 +83,8 @@ main{
 .intro-container .intro{
     grid-column: 2 / 3;
 }
+
+
 
 
 .button-container{
