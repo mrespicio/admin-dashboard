@@ -131,20 +131,14 @@ main{
 .projects{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.projects-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 50px 1fr;
-    grid-auto-rows: 1fr;
 }
 
-.projects > * {
-    border: solid 1px red;
-}
-
-.projects > h4 {
-    grid-column: 1 / -1;
-}
-.projects > .proj-item {
+.projects-grid > .proj-item {
     border: solid 1px blue;
 }
 
