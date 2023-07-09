@@ -39,6 +39,7 @@ main{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 2fr;
+    margin: 1rem;
 }
 
 .search-container{
@@ -69,19 +70,32 @@ main{
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
     align-items: center;
+    justify-items: start;
 }
 
-.intro-container > * {
+/* .intro-container > * {
     border: solid 1px purple;
-}
+} */
+
 .intro-container > img {
     grid-column: 1 / 2;
-    min-width: 55px;
+    grid-row: 1 / 3;
+    width: 100px;
+    justify-self: center;
 }
 
 .intro-container .intro{
     grid-column: 2 / 3;
+}
+
+.intro-container > p{
+    align-self: end;
+}
+.intro-container > h2{
+    align-self: start;
 }
 
 
