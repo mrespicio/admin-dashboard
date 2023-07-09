@@ -142,10 +142,33 @@ main{
     border: solid 1px blue;
 }
 
+
 .announcements{
     grid-column: 2 / 3;
 }
 
+.announce-grid{
+    border: solid 1px green;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.announce-item{
+    border: solid 1px lightgreen;
+}
+
+.announce-item p:nth-child(1){
+    font-weight: bold;
+}
+
 .trending{
     grid-column: 2 / 3;
+}
+
+.trending-grid{
+    border: solid 1px green;
+}
+
+.trend-item{
+    border: solid 1px lightgreen;
 }
