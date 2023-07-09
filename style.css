@@ -12,7 +12,7 @@
 main{
     border: solid 4px black;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 5fr;
 }
 
 #sidebar{
@@ -38,24 +38,49 @@ main{
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 }
 
-#header > .search-container{
+.search-container{
     grid-column: 1 / 2;
 }
 
-#header > .tr-container{
+.icons-container{
     grid-column: 2 / 4;
+    display: inline;
 }
 
-#header > .intro-container{
+.icons-container > h3{
+    display: inline;
+}
+
+ .intro-container{
     grid-column: 1 / 2;
-
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
 }
 
-#header > .button-container{
+.intro-container > * {
+    border: solid 1px purple;
+}
+.intro-container > img {
+    grid-column: 1 / 2;
+    min-width: 55px;
+}
+
+.intro-container .intro{
+    grid-column: 2 / 3;
+}
+
+
+.button-container{
     grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1rem;
+
 }
 
 #header > * {
@@ -67,4 +92,5 @@ main{
 #content{
     border: solid 1px darkcyan;
     grid-column: 2 / 3;
+    background-color: var(--darker-white);
 }
