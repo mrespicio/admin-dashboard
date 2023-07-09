@@ -116,9 +116,25 @@ main{
 
 
 
-
 #content{
     border: solid 1px darkcyan;
     grid-column: 2 / 3;
     background-color: var(--darker-white);
+    display: grid;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.projects > * {
+    border: solid 1px red;
+}
+
+.projects > h4 {
+    grid-column: 1 / -1;
+}
+.projects > .proj-item {
+    border: solid 1px blue;
 }
