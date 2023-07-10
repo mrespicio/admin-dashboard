@@ -141,6 +141,20 @@ main{
 
 .projects-grid > .proj-item {
     border: solid 1px blue;
+    max-height: 250px;
+    display: grid;
+}
+
+.proj-item > .proj-icons{
+    /* border: solid 1px red; */
+    justify-self: right;
+    align-self: end;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.proj-item > .proj-icons > img{
+    width: min(30px, 2rem);
 }
 
 
