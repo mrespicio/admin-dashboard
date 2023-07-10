@@ -77,8 +77,11 @@ main{
 .icons-container > img{
     width: max(40px, 10%);
 }
-.icons-container > * {
-    border: solid 1px orange;
+.icons-container > img:nth-child(2){
+    border: solid 1px lightgray;
+    border-radius: 50%;
+    background-color: #893168;
+
 }
 
 /* bottom left */
@@ -99,6 +102,7 @@ main{
     justify-self: center;
     border: solid 1px lightgray;
     border-radius: 50%;
+    background-color: #893168;
 }
 
 .intro-container .intro{
@@ -246,6 +250,21 @@ main{
     border: solid 1px lightgray;
     border-radius: 50%;
 }
+
+.trending-grid > .trend-item:nth-child(1) > img {
+    background-color: #4BC6B9;
+}
+.trending-grid > .trend-item:nth-child(2) > img {
+    background-color: #C75146;
+}
+.trending-grid > .trend-item:nth-child(3) > img {
+    background-color: #F18F01;
+}
+.trending-grid > .trend-item:nth-child(4) > img {
+    background-color: #9BA2FF;
+}
+
+
 
 .trend-item p:nth-child(2){
     font-size: 1.1rem;
