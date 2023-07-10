@@ -162,17 +162,21 @@ main{
 .projects-grid > .proj-item {
     max-height: 250px;
     display: grid;
+    grid-template-rows: auto auto 1fr;
     background-color: var(--light-white);
     border: solid 1px black;
     border-radius: 16px;
     padding: 2em;
+    align-items: start;
+    gap: .8em;
 }
 .proj-item > h4{
     height: 1rem;
 }
-
+.proj-item > p{
+    max-height: 200px;
+}
 .proj-item > .proj-icons{
-    /* border: solid 1px red; */
     justify-self: right;
     align-self: end;
     margin-bottom: 8px;
@@ -182,7 +186,6 @@ main{
 .proj-item > .proj-icons > img{
     width: min(30px, 2rem);
     margin: 0 2px;
-
 }
 
 
