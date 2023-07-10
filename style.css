@@ -38,6 +38,15 @@ main{
     max-width: 60px;
 }
 
+.sb-item > img{
+    max-width: 16px;
+}
+
+.sb-item > a {
+    text-decoration: none;
+    color: var(--light-white);
+}
+
 /* header */
 #header{
     border: solid 1px green;
