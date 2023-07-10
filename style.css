@@ -144,6 +144,10 @@ main{
     max-height: 250px;
     display: grid;
 }
+.proj-item > h4{
+    border: solid 1px red;
+    height: 1rem;
+}
 
 .proj-item > .proj-icons{
     /* border: solid 1px red; */
