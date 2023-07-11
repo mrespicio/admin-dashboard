@@ -74,17 +74,13 @@ main{
     margin: 1rem;
 }
 
-#header > * {
-    border: solid 1px red;
-}
-
 /* search bar */
 #header .search-container{
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
     padding: 16px;
 }
 
