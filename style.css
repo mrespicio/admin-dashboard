@@ -105,6 +105,7 @@ main{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, auto);
+    justify-items: center;
 }
 
 .icons-container > img{
@@ -158,7 +159,7 @@ main{
 
 .button-container > button{
     height: 3em;
-    width: 6em;
+    width: max(6em, 60%);
     justify-self: center;
     border: solid 1px black;
     border-radius: 10px;
