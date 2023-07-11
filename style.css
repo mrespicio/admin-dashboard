@@ -162,12 +162,13 @@ main{
     justify-self: center;
     border: solid 1px black;
     border-radius: 10px;
+    background-color: var(--purple);
+    color: var(--light-white)
 }
 
 
 /* main content */
 #content{
-    border: solid 1px darkcyan;
     grid-column: 2 / 3;
     background-color: var(--darker-white);
     display: grid;
@@ -219,6 +220,9 @@ main{
     margin: 0 2px;
 }
 
+.proj-item:hover{
+    
+}
 
 
 /* announcements */
@@ -297,8 +301,6 @@ main{
 .trending-grid > .trend-item:nth-child(4) > img {
     background-color: #9BA2FF;
 }
-
-
 
 .trend-item p:nth-child(2){
     font-size: 1.1rem;
