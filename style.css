@@ -53,6 +53,7 @@ main{
     list-style: none;
 }
 
+
 .sb-item > img{
     max-width: 16px;
 }
@@ -61,8 +62,13 @@ main{
     text-decoration: none;
     color: var(--light-white);
     margin-left: 12px; 
+    border-radius: 5px;
+    padding: 6px;
 }
 
+.sb-item > a:hover{
+    text-shadow: 2px 2px black;
+}
 
 
 /* header */
@@ -166,6 +172,9 @@ main{
     color: var(--light-white)
 }
 
+.button-container > button:hover{
+    box-shadow: 2px 2px black;
+}
 
 /* main content */
 #content{
@@ -220,8 +229,14 @@ main{
     margin: 0 2px;
 }
 
+.proj-item > .proj-icons > img:hover{
+    filter: invert(16%) sepia(87%) 
+    saturate(5279%) hue-rotate(263deg)
+    brightness(88%) contrast(93%);
+}
+
 .proj-item:hover{
-    
+    box-shadow: 5px 5px black;
 }
 
 
