@@ -251,7 +251,7 @@ main{
     background-color: var(--light-white);
     border: solid 1px black;
     border-radius: 16px;
-    padding: 2em;
+    padding: 1em;
 }
 
 .announce-item{
@@ -281,7 +281,7 @@ main{
     background-color: var(--light-white);
     border: solid 1px black;
     border-radius: 16px;
-    padding: 2em;
+    padding: 1em;
 }
 
 /* trending items */
