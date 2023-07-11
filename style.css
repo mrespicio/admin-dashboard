@@ -310,3 +310,14 @@ main{
 .trend-item p:nth-child(2){
     font-size: 1.1rem;
 }
+
+.cred{
+    grid-column: 1 / 3;
+    justify-self: end;
+    align-self: end;
+}
+.cred a:link,
+.cred a:visited{
+    text-decoration: none;
+    color: var(--blue);
+}
